@@ -3543,7 +3543,7 @@
                                 "headers": [
                                     {
                                         "name": "Authorization",
-                                        "value": "Bearer sk_a562a88289980b87d6ae9b457051add4954f3fc44e757b38bb0a8416079b3dee"
+                                        "value": "Bearer Your token here "
                                     },
                                     {
                                         "name": "Content-Type",
@@ -3556,7 +3556,7 @@
                                 "parseResponse": true,
                                 "allowRedirects": true,
                                 "stopOnHttpError": true,
-                                "jsonStringBodyContent": "{\"content\":\"{{42.cleanCaption}}\",\"mediaItems\":[{{69.array}}],\"platforms\":[{\"platform\":\"tiktok\",\"accountId\":\"6a2163a72b2567671ac66a4e\"}],\"tiktokSettings\":{\"privacy_level\":\"PUBLIC_TO_EVERYONE\",\"allow_comment\":true,\"media_type\":\"photo\",\"content_preview_confirmed\":true,\"express_consent_given\":true},\"publishNow\":true}",
+                                "jsonStringBodyContent": "{\"content\":\"{{42.cleanCaption}}\",\"mediaItems\":[{{69.array}}],\"platforms\":[{\"platform\":\"tiktok\",\"accountId\":\"\"}],\"tiktokSettings\":{\"privacy_level\":\"PUBLIC_TO_EVERYONE\",\"allow_comment\":true,\"media_type\":\"photo\",\"content_preview_confirmed\":true,\"express_consent_given\":true},\"publishNow\":true}",
                                 "requestCompressedContent": true
                             },
                             "metadata": {
