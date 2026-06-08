@@ -1,19 +1,24 @@
-TikTok Auto-Posting Automation
-This project automates the process of scheduling and publishing content to TikTok directly from an Airtable base using Make.com and Zernio.
-![Demo](demo.gif)
-🚀 Features
-Dynamic Scheduling: Posts are triggered based on a specific 'Scheduled Posting Time' column in Airtable.
-Multi-Format Support: Handles both single video uploads and multi-image carousels.
-Auto-Status Sync: Automatically updates a checkbox in Airtable once a post is successfully published.
-Zernio Integration: Uses Zernio for streamlined API handling and bypassing long approval processes.
-🛠️ Tech Stack
-Airtable: Content Management System (CMS) & Scheduler.
-Make.com: Workflow Automation Platform.
-Zernio: Third-party API tool for TikTok publishing.
-📋 Automation Workflow
-Airtable Search: Polls the base every 15 minutes for records where Status = POSTED and the Scheduled Time is due.
-Router: Directs the data based on content type (Video vs. Carousel).
-JSON Handling: Custom JSON payloads are sent via HTTP modules to the Zernio API.
-Airtable Update: After a successful response, the record is marked as Posted to TikTok.
- Key Learnings
-Implementing the Carousel logic required advanced Array Aggregation and specific JSON formatting to ensure multi-image posts were correctly processed by the TikTok API structure.
+# TikTok Auto-Posting Automation
+
+This project automates scheduling and publishing content to TikTok from Airtable using Make.com and Zernio.
+<img width="947" height="535" alt="Screenshot (1435)" src="https://github.com/user-attachments/assets/57162f86-1cbf-4c93-a708-bb2c456c86d0" />
+
+## 🚀 Features
+* **Dynamic Scheduling:** Triggered by Airtable 'Scheduled Posting Time'.
+* **Multi-Format Support:** Handles single videos and multi-image carousels.
+* **Auto-Status Sync:** Updates Airtable checkbox once published.
+* **Zernio Integration:** Bypasses long TikTok API approval processes.
+
+## 🛠️ Tech Stack
+* **Airtable:** CMS & Scheduler.
+* **Make.com:** Workflow Automation.
+* **Zernio:** Third-party API for TikTok.
+
+## 📋 Automation Workflow
+1. **Airtable Search:** Polls base every 15 mins for pending records.
+2. **Router:** Directs data by content type (Video vs. Carousel).
+3. **JSON Handling:** Custom payloads sent via HTTP to Zernio API.
+4. **Airtable Update:** Marks record as `Posted to TikTok`.
+
+##  Key Learnings
+Carousel logic required advanced **Array Aggregation** and specific JSON formatting to handle multi-image structures correctly.
